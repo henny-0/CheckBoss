@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Course Selection &amp; Payment"
+        app:titleTextColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/Subjects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:text="Select the Subjects and Payment Method:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/subjects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="20sp"
+        android:text="Subjects: "
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:text="Java Course - £30" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:text="Android Course - £20" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCSharp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:text="C# .Net Course - £10" />
+
+    <TextView
+        android:id="@+id/PaymentMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="20sp"
+        android:text="Payment Method: "
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButtonCreditCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:text="Credit Card" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDebitCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:text="Debit Card" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPayPal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:text="PayPal" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/paymentinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="20sp"
+        android:text=""
+        android:textSize="18sp" />
+
+</LinearLayout>
